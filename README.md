@@ -1,1 +1,2 @@
-# SABO_Alg
+# SABO: Safe and Aggressive Bayesian Optimization for Automatic Legged Locomotion Controller Tuning
+This repository contains the code of our paper \href{https://sabo-6.github.io/resources/SABO.pdf}{SABO: Safe and Aggressive Bayesian Optimization for Automatic Legged Locomotion Controller Tuning}. The project website is on \href{https://sabo-6.github.io}{https://sabo-6.github.io}
