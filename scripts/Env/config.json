@@ -1,0 +1,62 @@
+{
+  "log_video": false,
+  "log_plots": false,
+
+  "seed": 4,
+  "n_rollout": 100,
+  "Opt": "Swarm",
+  "threshold": 0.3,
+
+  "domain_start": [1, 1, 1],
+  "domain_end": [2, 2, 5],
+  "dim_obs": 2, 
+  "dim_params": 2,
+  "dim_context": 1,
+  "dim_model": 3,
+
+  "Trainer": {
+    "n_opt_samples": 600,
+    "refit_interval": 0,
+    "show_progress": false
+  },
+
+  "Optimization": {
+    "set_size": 500,
+    "p": 1,
+    "g": 1,
+    "w": 0.9,
+    "n_restarts": 3,
+    "set_init": "safe",
+    "max_global_steps_without_progress_tolerance": 0.9,
+    "max_global_steps_without_progress": 3,
+    "n_iterations": 100
+  },
+
+  "GoSafeOpt": {
+    "scale_beta": 1.0,
+    "beta": 9,
+    "n_max_local": 10,
+    "n_max_global": 5
+  },
+
+  "model": {
+    "lenghtscale": [0.1, 0.1, 1.0],
+    "normalize_input": true,
+    "normalize_output": true,
+    "likelihood_noise": 0.01
+  },
+
+  "wandb": {
+    "project": "bayopt-hw",
+    "directory": "~/.wandb",
+    "save_interval": 1
+  },
+
+  "GoSafeOptBackupStrategy": {
+    "interior_lb": 0.2,
+    "marginal_lb": 0.6,
+    "interior_prob": 0.8,
+    "marginal_prob": 0.95,
+    "std": 2
+  }
+}

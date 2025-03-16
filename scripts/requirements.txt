@@ -1,0 +1,14 @@
+# requirements.txt
+
+numpy==1.24.4
+torch==2.1.1
+typer==0.9.0
+rich==13.7.0
+gpytorch==1.10
+botorch==0.8.5
+gymnasium==0.29.1
+wandb==0.16.1
+pandas==2.0.3
+ruff-lsp==0.0.45
+pyright==1.1.339
+ruff==0.1.7
